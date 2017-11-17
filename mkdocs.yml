@@ -1,0 +1,9 @@
+site_name: Test-Port
+repo_url: https://github.com/Robert Gouge/Test-Port
+theme: readthedocs
+pages:
+  - Home: index.md
+  - Test-Port Basics:
+    - What is Test-Port: about.md
+    - Quick Start: Quick-Start-Installation-and-Example.md
+  - Acknowledgements: acknowledgements.md
