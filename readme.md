@@ -4,7 +4,7 @@ This moudle allows for various tests to a specific TCP port
 
 ## GitPitch PitchMe presentation
 
-* [gitpitch.com/Robert Gouge/Test-Port](https://gitpitch.com/Robert Gouge/Test-Port)
+* [gitpitch.com/Robert Gouge/Test-Port](https://gitpitch.com/RobertCGouge/Test-Port)
 
 ## Getting Started
 
@@ -19,8 +19,8 @@ Install from the PSGallery and Import the module
 For more information
 
 * [Test-Port.readthedocs.io](http://Test-Port.readthedocs.io)
-* [github.com/Robert Gouge/Test-Port](https://github.com/Robert Gouge/Test-Port)
-* [Robert Gouge.github.io](https://Robert Gouge.github.io)
+* [github.com/Robert Gouge/Test-Port](https://github.com/RobertCGouge/Test-Port)
+* [Robert Gouge.github.io](https://RobertCGouge.github.io)
 
 
 This project was generated using [Kevin Marquette](http://kevinmarquette.github.io)'s [Full Module Plaster Template](https://github.com/KevinMarquette/PlasterTemplates/tree/master/FullModuleTemplate).
