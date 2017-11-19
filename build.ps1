@@ -11,11 +11,11 @@ Write-Output "Starting build"
 # Grab nuget bits, install modules, set build variables, start build.
 Write-Output "  Install Dependent Modules"
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Install-Module InvokeBuild, PSDeploy, BuildHelpers, PSScriptAnalyzer -force -Scope CurrentUser
+Install-Module InvokeBuild, PSDeploy, BuildHelpers, PSScriptAnalyzer, platyPS -force -Scope CurrentUser
 Install-Module Pester -Force -SkipPublisherCheck -Scope CurrentUser
 
 Write-Output "  Import Dependent Modules"
-Import-Module InvokeBuild, BuildHelpers, PSScriptAnalyzer
+Import-Module InvokeBuild, BuildHelpers, PSScriptAnalyzer, platyPS
 
 Set-BuildEnvironment
 
