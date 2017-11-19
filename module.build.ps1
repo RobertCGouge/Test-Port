@@ -256,7 +256,7 @@ Task Publish {
         "`t* Your commit message includes !deploy (Current: $ENV:BHCommitMessage)"
     }
 }
-Task PostDeploy -depends Publish {
+Task PostDeploy -Depends Publish {
     $lines
     if ($ENV:APPVEYOR_REPO_PROVIDER -notlike 'github')
     {
