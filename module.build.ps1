@@ -11,7 +11,7 @@ $script:projectRoot = $PSScriptRoot
 $script:ReleaseNotes = "$ProjectRoot\RELEASE.md"
 $script:ChangeLog = "$ProjectRoot\docs\ChangeLog.md"
 
-Task Default Build, Pester, UpdateSource, Publish
+Task Default Build, Pester, UpdateSource, Publish, PostDeploy
 Task Build CopyToOutput, BuildPSM1, BuildPSD1, BuildDocs
 Task Pester Build, ImportModule, UnitTests, FullTests
 
@@ -256,7 +256,7 @@ Task Publish {
         "`t* Your commit message includes !deploy (Current: $ENV:BHCommitMessage)"
     }
 }
-Task PostDeploy -Depends Publish {
+Task PostDeploy {
     $lines
     if ($ENV:APPVEYOR_REPO_PROVIDER -notlike 'github')
     {
