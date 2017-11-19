@@ -7,8 +7,3 @@ pages:
     - What is Test-Port: about.md
     - Quick Start: Quick-Start-Installation-and-Example.md
   - Acknowledgements: acknowledgements.md
-  - Realse Notes: RELEASE.md
-  - Change Log: ChangeLog.md
-  - Functions:
-    - Test-Port: functions/Test-Port.md
-

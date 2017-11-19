@@ -98,18 +98,18 @@ function Test-Port
 
     Begin
     {
-        if ($Computer -ne $null)
+        if ($null -ne $Computer)
         {
             Write-Verbose -Message "Attempting to connect to port: $Port at computer: $Computer"
         }
-        if ($IP -ne $null)
+        if ($null -ne $IP)
         {
             Write-Verbose -Message "Attempting to connect to port: $Port at IP Address: $IP"
         }
     }
     Process
     {
-        if ($Computer -ne $null)
+        if ($null -ne $Computer)
         {
             do
             {
@@ -118,7 +118,7 @@ function Test-Port
             } until (Test-NetConnection -ComputerName $Computer -Port $Port)
             Write-Verbose -Message "Successfuly connected to Port: $Port on Computer: $Computer"
         }
-        if ($IP -ne $null)
+        if ($null -ne $IP)
         {
             do
             {
